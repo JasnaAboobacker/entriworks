@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+
+<h1>Patient Dashboard
+<p>Welcome, {{ patient.user.username }}</p></h1>
+
+    <h2>Your Appointments</h2>
+    <ul>
+        {% for appointment in appointments %}
+
+        <li>
+            Date: {{ appointment.date }}<br>
+            Time: {{ appointment.time }}<br>
+            Doctor: {{ appointment.doctor.user.username }}<br>
+
+        </li>
+        {% empty %}
+        <li>No appointments found.</li>
+        {% endfor %}
+    </ul>
+
+</center>
+<!--&lt;!&ndash;<h2>Appointments</h2>&ndash;&gt;-->
+<!--<a href="{% url 'appointment_list' %}"> Appointments</a>-->
+
+<!--<ul>-->
+<!--    {% for appointment in appointments %}-->
+<!--        <li>With Dr. {{ appointment.doctor.user.username }} on {{ appointment.date }} at {{ appointment.time }}</li>-->
+<!--    {% endfor %}-->
+<!--</ul>-->
+</body>
+</html>
+

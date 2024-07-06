@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>HMS - Django</title>
+
+
+</head>
+
+<body>
+
+  {% include "navbar.html" %}
+  <br><br>
+
+  <center>
+    <h3 class='alert alert-success'>Send Us Your Valuable Feedback !</h3>
+
+    <h2>We value your feedback and are here to assist you with any questions or concerns. Feel free to reach out to us at www.astermedicity@gmail.com.<br>
+
+Thank you for choosing Aster Medicity for your healthcare needs!</h2><br>
+    <form method="POST">
+<div class="contact">
+        <h1>Contact Us :</h1>
+        <p><strong>Aster Medicity</strong></p>
+        <p>Thrissur,chavakkad</p>
+        <p><strong>Phone:</strong> 7545452130</p>
+        <p><strong>Email:</strong> contact@astermedicity.com</p>
+    </div>
+<!--      {% csrf_token %}-->
+<!--      <div class="form-group">-->
+<!--        <p>-->
+<!--        <h3>{{ form.as_p }}</h3>-->
+<!--        </p>-->
+<!--        <br>-->
+<!--        <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>-->
+<!--      </div>-->
+<!--    </form>-->
+  </center>
+
+  <br><br><br><br><br><br>
+  {% include "footer.html" %}
+</body>
+
+
+</html>

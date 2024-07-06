@@ -1,0 +1,24 @@
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the list items (navbar items) */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adding spacing between navbar items */
+nav ul li {
+    display: inline; /* Display items horizontally */
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+/* Styling the links */
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+
+ }
